@@ -55,6 +55,7 @@ SRCS = ft_isalpha.c \
 		ft_printf.c \
 		nbr_functions.c \
 		char_functions.c \
+		ft_free_str_array.c \
 		# to comment depending of your needs
 		ft_lstnew.c \
 		ft_lstadd_front.c \

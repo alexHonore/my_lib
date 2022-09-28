@@ -62,6 +62,7 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
+void				ft_free_str_array(char **array);
 /* to comment depending of your needs */
 t_list				*ft_lstnew(void *content);
 int					ft_lstsize(t_list *lst);
