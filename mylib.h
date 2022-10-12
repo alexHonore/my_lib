@@ -93,5 +93,5 @@ int					ft_print_u_nbr(unsigned int n);
 int					ft_printchar(char c, int fd);
 int					ft_printstr(char *s, int fd);
 
-int	throw_error(char *error, int exit_code);
+int					throw_error(char *error, int exit_code);
 #endif
