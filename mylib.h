@@ -94,4 +94,7 @@ int					ft_printchar(char c, int fd);
 int					ft_printstr(char *s, int fd);
 
 int					throw_error(char *error, int exit_code);
+long	int			ft_atol(const char *str);
+int					ft_nb_out_bounds(char **argv);
+
 #endif

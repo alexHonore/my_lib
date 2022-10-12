@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   throw_error.c                                      :+:      :+:    :+:   */
+/*   ft_nb_out_bounds.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,12 +12,13 @@
 
 #include "mylib.h"
 
-int	throw_error(char *error, int exit_code)
+int	ft_nb_out_bounds(char **argv)
 {
-	ft_printf("\033[0;31m\n");
-	ft_printf("Error\n%s\n", error);
-	ft_printf("\033[0m");
-    if (exit_code >= 0)
-	    exit(exit_code);
-	return (1);
+	int	i;
+
+	i = 0;
+	while (argv[++i])
+		if (ft_atol(argv[i]) > 2147483647 || ft_atol(argv[i]) < -2147483648)
+			return (1);
+	return (0);
 }
