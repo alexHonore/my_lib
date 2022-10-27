@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/03 14:36:52 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/09/25 16:24:35 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/10/27 12:39:08 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,9 @@
 # include <string.h>
 # include <unistd.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1
+# endif
 /* to comment depending of your needs */
 typedef struct s_list
 {
@@ -94,7 +97,11 @@ int					ft_printchar(char c, int fd);
 int					ft_printstr(char *s, int fd);
 
 int					throw_error(char *error, int exit_code);
-long	int			ft_atol(const char *str);
+long int			ft_atol(const char *str);
 int					ft_nb_out_bounds(char **argv);
+
+// gnl
+char				*get_next_line(int fd);
+char				*get_line(char **line, char **stash);
 
 #endif

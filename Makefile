@@ -6,7 +6,7 @@
 #    By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/03/28 13:33:02 by anshimiy          #+#    #+#              #
-#    Updated: 2022/09/25 16:24:14 by anshimiy         ###   ########.fr        #
+#    Updated: 2022/10/27 12:33:50 by anshimiy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,7 +59,6 @@ SRCS = ft_isalpha.c \
 		throw_error.c \
 		ft_atol.c \
 		ft_nb_out_bounds.c \
-		# to comment depending of your needs
 		ft_lstnew.c \
 		ft_lstadd_front.c \
 		ft_lstsize.c \
@@ -69,6 +68,7 @@ SRCS = ft_isalpha.c \
 		ft_lstclear.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
+		get_next_line.c \
 
 OBJS = $(SRCS:.c=.o)
 BONUS_OBJ = $(BONUS_FILES:.c=.o)
