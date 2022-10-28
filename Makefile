@@ -82,8 +82,6 @@ SRCS = src/ft_isalpha.c \
 		src/ft_lstmap.c \
 		src/get_next_line.c \
 
-BONUS_OBJ = $(BONUS_FILES:.c=.o)
-
 $(NAME): $(OBJS)
 	$(HIDE) $(AR) $(NAME) $(OBJS)
 
@@ -95,17 +93,13 @@ $(OBJS): $(OBJDIR)%.o : $(SRCDIR)%.c| $(OBJDIR)
 $(OBJDIR):
 	$(HIDE)mkdir -p $@
 
-
 all: $(NAME)
 
-bonus: $(BONUS_OBJ)
-	$(AR) $(NAME) $(BONUS_OBJ)
-
 clean:
-	$(RM) $(OBJS) $(BONUS_OBJ)
+	$(HIDE) $(RM) $(OBJS) $(BONUS_OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(HIDE) $(RM) $(NAME)
 
 re: fclean all
 
