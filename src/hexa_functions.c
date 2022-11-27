@@ -6,7 +6,7 @@
 /*   By: anshimiy <anshimiy@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/14 12:08:04 by anshimiy          #+#    #+#             */
-/*   Updated: 2022/10/28 17:31:47 by anshimiy         ###   ########.fr       */
+/*   Updated: 2022/11/27 17:13:01 by anshimiy         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,8 @@ int	ft_hex_len(unsigned long num)
 {
 	int	len;
 
+	if (num == 0)
+		return (1);
 	len = 0;
 	while (num != 0)
 	{
